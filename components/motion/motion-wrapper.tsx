@@ -71,3 +71,15 @@ export function MotionSection({ children, animation = "stagger", className, ...p
     </motion.section>
   )
 }
+
+export function FadeIn(props: MotionWrapperProps) {
+  return <MotionDiv animation="fadeIn" {...props} />
+}
+
+export function StaggerContainer(props: MotionWrapperProps) {
+  return <MotionSection animation="stagger" {...props} />
+}
+
+export function StaggerItem(props: MotionWrapperProps) {
+  return <MotionDiv animation="fadeInUp" {...props} />
+}
