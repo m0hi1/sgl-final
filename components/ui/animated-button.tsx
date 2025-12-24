@@ -37,7 +37,7 @@ export const AnimatedButton = forwardRef<HTMLButtonElement, AnimatedButtonProps>
     }
 
     const flattenedText = extractText(children as React.ReactNode)
-    const isCalButton = /(consult|audit)/i.test(flattenedText)
+    const isCalButton = /(consult|audit|\bcall\b)/i.test(flattenedText)
 
     const CAL_NAMESPACE = process.env.NEXT_PUBLIC_CAL_NAMESPACE ?? 'smartgalaxylabs'
     const CAL_LINK = process.env.NEXT_PUBLIC_CAL_LINK ?? 'mohit-mcgiao/smartgalaxylabs'

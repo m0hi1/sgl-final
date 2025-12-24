@@ -41,6 +41,9 @@ export function StickyCta({ text = "Get Free Quote", showAfterPercent = 40 }: St
             variant="primary"
             size="md"
             className="inline-flex items-center shadow-2xl shimmer hover:brightness-105 text-sm sm:text-base"
+            data-cal-namespace="smartgalaxylabs"
+            data-cal-link="mohit-mcgiao/smartgalaxylabs"
+            data-cal-config='{"layout":"month_view"}'
           >
             <Calendar className="w-5 h-5 sm:w-6 sm:h-6 shrink-0" />
             {text}

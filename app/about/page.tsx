@@ -211,7 +211,7 @@ export default function AboutPage() {
         </section>
 
         {/* Team Section */}
-        <MotionSection className="py-24 px-4">
+        {/* <MotionSection className="py-24 px-4">
           <div className="max-w-7xl mx-auto">
             <SectionHeader
               badge="Leadership"
@@ -250,7 +250,7 @@ export default function AboutPage() {
               ))}
             </div>
           </div>
-        </MotionSection>
+        </MotionSection> */}
 
         {/* CTA Section */}
         <section className="py-24 px-4 bg-secondary/30">
