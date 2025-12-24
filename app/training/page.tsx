@@ -135,10 +135,14 @@ export default function TrainingPage() {
                           <Link href={`/training/${course.slug}`}>
                             <AnimatedButton variant="primary" size="md">
                               View Details
-                              <ArrowRight className="w-4 h-4 ml-2" />
+                              <ArrowRight className="w-4 h-4 shrink-0" />
                             </AnimatedButton>
                           </Link>
-                          <Link href="/contact">
+                          <Link
+                            href={`/contact?source=training&course=${encodeURIComponent(course.slug)}&title=${encodeURIComponent(
+                              course.title,
+                            )}`}
+                          >
                             <AnimatedButton variant="outline" size="md">
                               Enquire Now
                             </AnimatedButton>

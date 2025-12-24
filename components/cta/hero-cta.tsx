@@ -21,10 +21,10 @@ export function HeroCta({
     <MotionDiv animation="fadeInUp" delay={0.3} className="flex flex-col xs:flex-row sm:flex-row gap-3 sm:gap-4">
       <AnimatedButton variant="primary" size="lg" onClick={onPrimaryClick} className="group text-sm sm:text-base">
         {primaryText}
-        <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5 inline-block transition-transform group-hover:translate-x-1" />
+        <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 shrink-0 transition-transform group-hover:translate-x-1" />
       </AnimatedButton>
       <AnimatedButton variant="outline" size="lg" onClick={onSecondaryClick} className="group text-sm sm:text-base">
-        <Play className="mr-2 w-4 h-4 sm:w-5 sm:h-5 inline-block" />
+        <Play className="w-4 h-4 sm:w-5 sm:h-5 shrink-0" />
         {secondaryText}
       </AnimatedButton>
     </MotionDiv>

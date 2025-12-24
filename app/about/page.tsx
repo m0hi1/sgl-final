@@ -1,5 +1,3 @@
-import { Navbar } from "@/components/layout/navbar"
-import { Footer } from "@/components/layout/footer"
 import { MotionDiv, MotionSection } from "@/components/motion/motion-wrapper"
 import { SectionHeader } from "@/components/ui/section-header"
 import { AnimatedCard } from "@/components/ui/animated-card"
@@ -83,7 +81,6 @@ const milestones = [
 export default function AboutPage() {
   return (
     <>
-      <Navbar />
       <main>
         {/* Hero Section */}
         <section className="pt-32 pb-20 px-4 bg-gradient-to-br from-primary/5 via-background to-accent/5">
@@ -110,7 +107,7 @@ export default function AboutPage() {
                 <MotionDiv animation="fadeInUp" delay={0.3} className="flex flex-col sm:flex-row gap-4">
                   <AnimatedButton variant="primary" size="lg">
                     Work With Us
-                    <ArrowRight className="ml-2 w-5 h-5" />
+                    <ArrowRight className="w-5 h-5 shrink-0" />
                   </AnimatedButton>
                   <AnimatedButton variant="outline" size="lg">
                     View Careers
@@ -267,7 +264,6 @@ export default function AboutPage() {
           </div>
         </section>
       </main>
-      <Footer />
       <StickyCta />
     </>
   )

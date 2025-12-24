@@ -1,5 +1,3 @@
-import { Navbar } from "@/components/layout/navbar"
-import { Footer } from "@/components/layout/footer"
 import { MotionDiv, MotionSection } from "@/components/motion/motion-wrapper"
 import { AnimatedButton } from "@/components/ui/animated-button"
 import { AnimatedCard } from "@/components/ui/animated-card"
@@ -51,7 +49,6 @@ export default async function CaseStudyPage({ params }: PageProps) {
 
   return (
     <>
-      <Navbar />
       <main>
         {/* Hero Section */}
         <section className="pt-32 pb-12 px-4">
@@ -221,7 +218,7 @@ export default async function CaseStudyPage({ params }: PageProps) {
                 <Link href="/case-studies">
                   <AnimatedButton variant="outline">
                     View All
-                    <ArrowRight className="ml-2 w-4 h-4" />
+                    <ArrowRight className="w-4 h-4 shrink-0" />
                   </AnimatedButton>
                 </Link>
               </MotionDiv>
@@ -271,7 +268,6 @@ export default async function CaseStudyPage({ params }: PageProps) {
           </div>
         </section>
       </main>
-      <Footer />
       <StickyCta />
     </>
   )

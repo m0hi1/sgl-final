@@ -3,8 +3,6 @@
 import { useState } from "react"
 import Link from "next/link"
 import Image from "next/image"
-import { Navbar } from "@/components/layout/navbar"
-import { Footer } from "@/components/layout/footer"
 import { MotionDiv, MotionSection } from "@/components/motion/motion-wrapper"
 import { AnimatedCard } from "@/components/ui/animated-card"
 import { InlineCta } from "@/components/cta/inline-cta"
@@ -31,7 +29,6 @@ export default function CaseStudiesPage() {
 
   return (
     <>
-      <Navbar />
       <main>
         {/* Hero Section */}
         <section className="pt-32 pb-20 px-4 bg-gradient-to-br from-primary/5 via-background to-accent/5">
@@ -59,12 +56,12 @@ export default function CaseStudiesPage() {
             <MotionDiv
               animation="fadeInUp"
               delay={0.3}
-              className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto"
+              className="mt-12 grid grid-cols-2 md:grid-cols-2 gap-2 max-w-2xl mx-auto"
             >
               {[
                 { value: "500+", label: "Projects Completed" },
-                { value: "$2.5B+", label: "Revenue Generated" },
-                { value: "340%", label: "Avg Traffic Growth" },
+                // { value: "$2.5B+", label: "Revenue Generated" },
+                // { value: "340%", label: "Avg Traffic Growth" },
                 { value: "98%", label: "Client Satisfaction" },
               ].map((stat) => (
                 <div key={stat.label} className="text-center">
@@ -197,9 +194,9 @@ export default function CaseStudiesPage() {
                               </span>
                             ))}
                           </div>
-                          <div className="flex items-center text-primary font-medium">
+                          <div className="flex items-center gap-2 text-primary font-medium">
                             Read Case Study
-                            <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
+                            <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
                           </div>
                         </div>
                       </AnimatedCard>
@@ -232,7 +229,6 @@ export default function CaseStudiesPage() {
           </div>
         </section>
       </main>
-      <Footer />
       <StickyCta />
     </>
   )

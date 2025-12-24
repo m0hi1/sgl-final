@@ -3,8 +3,6 @@
 import { useState } from "react"
 import Link from "next/link"
 import Image from "next/image"
-import { Navbar } from "@/components/layout/navbar"
-import { Footer } from "@/components/layout/footer"
 import { MotionDiv, MotionSection } from "@/components/motion/motion-wrapper"
 import { AnimatedCard } from "@/components/ui/animated-card"
 import { AnimatedButton } from "@/components/ui/animated-button"
@@ -34,7 +32,6 @@ export default function BlogPage() {
 
   return (
     <>
-      <Navbar />
       <main>
         {/* Hero Section */}
         <section className="pt-32 pb-16 px-4 bg-gradient-to-br from-primary/5 via-background to-accent/5">
@@ -306,7 +303,6 @@ export default function BlogPage() {
           </div>
         </section>
       </main>
-      <Footer />
       <StickyCta />
     </>
   )

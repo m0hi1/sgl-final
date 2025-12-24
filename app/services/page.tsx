@@ -1,5 +1,3 @@
-import { Navbar } from "@/components/layout/navbar"
-import { Footer } from "@/components/layout/footer"
 import { MotionDiv, MotionSection } from "@/components/motion/motion-wrapper"
 import { SectionHeader } from "@/components/ui/section-header"
 import { AnimatedCard } from "@/components/ui/animated-card"
@@ -29,7 +27,6 @@ const serviceComparison = [
 export default function ServicesPage() {
   return (
     <>
-      <Navbar />
       <main>
         {/* Hero Section */}
         <section className="pt-32 pb-20 px-4 bg-gradient-to-br from-primary/5 via-background to-accent/5">
@@ -54,7 +51,7 @@ export default function ServicesPage() {
               <MotionDiv animation="fadeInUp" delay={0.3} className="flex flex-col sm:flex-row gap-4 justify-center">
                 <AnimatedButton variant="primary" size="lg">
                   Get Free Audit
-                  <ArrowRight className="ml-2 w-5 h-5" />
+                  <ArrowRight className="w-5 h-5 shrink-0" />
                 </AnimatedButton>
                 <AnimatedButton variant="outline" size="lg">
                   View Pricing
@@ -95,9 +92,9 @@ export default function ServicesPage() {
                         ))}
                       </div>
 
-                      <div className="mt-6 flex items-center text-primary font-medium">
+                      <div className="mt-6 flex items-center gap-2 text-primary font-medium">
                         Learn more
-                        <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
+                        <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
                       </div>
                     </AnimatedCard>
                   </Link>
@@ -145,7 +142,6 @@ export default function ServicesPage() {
           </div>
         </section>
       </main>
-      <Footer />
       <StickyCta />
     </>
   )

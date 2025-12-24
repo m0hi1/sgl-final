@@ -60,7 +60,7 @@ export function CaseStudiesPreview() {
             <Link href="/case-studies">
               <AnimatedButton variant="outline" className="text-sm sm:text-base">
                 View All Case Studies
-                <ArrowRight className="ml-2 w-4 h-4" />
+                <ArrowRight className="w-4 h-4 shrink-0" />
               </AnimatedButton>
             </Link>
           </MotionDiv>

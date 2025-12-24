@@ -1,7 +1,5 @@
 "use client"
 
-import { Navbar } from "@/components/layout/navbar"
-import { Footer } from "@/components/layout/footer"
 import { MotionDiv, MotionSection } from "@/components/motion/motion-wrapper"
 import { AnimatedCard } from "@/components/ui/animated-card"
 import { AnimatedButton } from "@/components/ui/animated-button"
@@ -87,7 +85,6 @@ export default function BlogPostPage() {
 
   return (
     <>
-      <Navbar />
       <main>
         {/* Hero Section */}
         <section className="pt-32 pb-8 px-4">
@@ -260,7 +257,7 @@ export default function BlogPostPage() {
                 <Link href="/blog">
                   <AnimatedButton variant="outline">
                     View All
-                    <ArrowRight className="ml-2 w-4 h-4" />
+                    <ArrowRight className="w-4 h-4 shrink-0" />
                   </AnimatedButton>
                 </Link>
               </MotionDiv>
@@ -294,7 +291,6 @@ export default function BlogPostPage() {
           </section>
         )}
       </main>
-      <Footer />
       <StickyCta />
     </>
   )

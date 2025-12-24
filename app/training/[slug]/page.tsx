@@ -13,7 +13,8 @@ import { useState } from "react"
 
 export default function TrainingDetailPage() {
   const params = useParams()
-  const course = getTrainingCourse(params.slug as string)
+  const slug = typeof params.slug === "string" ? params.slug : Array.isArray(params.slug) ? params.slug[0] : ""
+  const course = getTrainingCourse(slug)
   const [openModule, setOpenModule] = useState<number>(0)
 
   if (!course) {
@@ -71,7 +72,9 @@ export default function TrainingDetailPage() {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link href="/contact">
+                <Link href={`/contact?source=training&course=${encodeURIComponent(slug)}&title=${encodeURIComponent(
+                  course.title,
+                )}`}>
                   <AnimatedButton variant="primary" size="lg">
                     Enroll Now - {course.price}
                   </AnimatedButton>
@@ -253,7 +256,7 @@ export default function TrainingDetailPage() {
               <Link href="/contact">
                 <AnimatedButton variant="primary" size="lg">
                   Enroll Now - {course.price}
-                  <ArrowRight className="w-4 h-4 ml-2" />
+                  <ArrowRight className="w-4 h-4 shrink-0" />
                 </AnimatedButton>
               </Link>
               <AnimatedButton variant="outline" size="lg">

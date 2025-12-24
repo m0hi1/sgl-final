@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import { createElement, type ReactElement } from "react"
 import { MotionDiv, MotionSection } from "@/components/motion/motion-wrapper"
 import { AnimatedButton } from "@/components/ui/animated-button"
 import { Mail, Phone, MapPin } from "lucide-react"
@@ -211,7 +212,9 @@ export function Footer() {
                 aria-label={social.label}
                 className="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-background/10 flex items-center justify-center hover:bg-background/20 transition-colors"
               >
-                <social.icon className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
+                {createElement(social.icon as unknown as (props: { className?: string }) => ReactElement, {
+                  className: "w-3.5 h-3.5 sm:w-4 sm:h-4",
+                })}
               </a>
             ))}
           </div>

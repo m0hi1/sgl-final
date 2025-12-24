@@ -1,5 +1,3 @@
-import { Navbar } from "@/components/layout/navbar"
-import { Footer } from "@/components/layout/footer"
 import { HeroSection } from "@/components/sections/hero-section"
 import { SocialProofSection } from "@/components/sections/social-proof-section"
 import { ServicesSection } from "@/components/sections/services-section"
@@ -13,10 +11,9 @@ import { ExitIntentModal } from "@/components/cta/exit-intent-modal"
 export default function HomePage() {
   return (
     <>
-      <Navbar />
       <main>
         <HeroSection />
-        <SocialProofSection />
+        {/* <SocialProofSection /> */}
         <ServicesSection />
 
         <section className="py-12 px-4">
@@ -31,9 +28,8 @@ export default function HomePage() {
 
         <CaseStudiesPreview />
         <ProcessSection />
-        <TestimonialsSection />
+        {/* <TestimonialsSection /> */}
       </main>
-      <Footer />
 
       {/* CTA Components */}
       <StickyCta />

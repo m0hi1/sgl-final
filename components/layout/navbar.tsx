@@ -13,9 +13,9 @@ const navLinks = [
     href: "/services",
     label: "Services",
     children: [
+      { href: "/services/digital-marketing", label: "Digital Marketing" },
       { href: "/services/mobile-app-development", label: "Mobile App Development" },
       { href: "/services/website-development", label: "Website Development" },
-      { href: "/services/digital-marketing", label: "Digital Marketing" },
       { href: "/services/seo", label: "SEO Services" },
       { href: "/services/cloud-hosting", label: "Cloud & Servers" },
       { href: "/services/software-development", label: "Software Development" },
@@ -57,20 +57,19 @@ export function Navbar() {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-14 sm:h-16 md:h-20">
           {/* Logo - Smaller on mobile */}
-          <Link href="/" className="flex items-center gap-1.5 sm:gap-2">
-            <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg flex items-center justify-center shrink-0">
-              <img
-                src="/logo/logo.jpg"
-                alt="SmartGalaxy Labs Logo"
-                className="w-full h-full object-fit rounded-sm"
-              />
-            </div>
-            {/* <span className="font-bold text-base sm:text-xl tracking-tight">
-              <span className="hidden xs:inline">SmartGalaxy </span>
-              <span className="xs:hidden">SGL</span>
-              <span className="hidden xs:inline">Labs</span>
-            </span> */}
-          </Link>
+	          <Link href="/" className="flex items-center gap-1.5 sm:gap-2">
+	            <div className="w-18 h-18 sm:w-16 mt-2 sm:h-16 md:w-20 md:h-20 rounded-lg flex items-center justify-center shrink-0">
+	              <img
+	                src="/logo/logo.jpg"
+	                alt="SmartGalaxy Labs Logo"
+	                className="block w-full h-full object-contain rounded-sm"
+	              />
+	            </div>
+	            <span className="font-bold text-base sm:text-xl tracking-tight leading-none flex items-center translate-y-[1px]">
+	              <span className="sm:hidden">SGL</span>
+	              <span className="hidden sm:inline">SmartGalaxyLabs</span>
+	            </span>
+	          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center gap-1">
@@ -120,7 +119,7 @@ export function Navbar() {
 
           {/* CTA Button - Smaller text on tablet */}
           <div className="hidden lg:block">
-            <AnimatedButton variant="primary" size="sm" className="text-xs xl:text-sm">
+            <AnimatedButton variant="primary" size="sm" className="text-xs xl:text-sm shimmer hover:brightness-105">
               Get Free Consultation
             </AnimatedButton>
           </div>
@@ -172,7 +171,7 @@ export function Navbar() {
                 </div>
               ))}
               <div className="pt-4">
-                <AnimatedButton variant="primary" size="md" className="w-full">
+                <AnimatedButton variant="primary" size="md" className="w-full shimmer hover:brightness-105">
                   Get Free Consultation
                 </AnimatedButton>
               </div>

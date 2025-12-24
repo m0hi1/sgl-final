@@ -2,9 +2,7 @@
 
 import type React from "react"
 
-import { useState, useRef } from "react"
-import { Navbar } from "@/components/layout/navbar"
-import { Footer } from "@/components/layout/footer"
+import { useState, useRef, useEffect } from "react"
 import { MotionDiv, MotionSection } from "@/components/motion/motion-wrapper"
 import { AnimatedButton } from "@/components/ui/animated-button"
 import { AnimatedCard } from "@/components/ui/animated-card"
@@ -136,6 +134,7 @@ export default function ContactPage() {
     requirements: "",
   })
   const [isSubmitted, setIsSubmitted] = useState(false)
+  const [isSubmitting, setIsSubmitting] = useState(false)
   const [isDropdownOpen, setIsDropdownOpen] = useState(false)
   const [ripples, setRipples] = useState<{ id: number; x: number; y: number }[]>([])
   const formRef = useRef<HTMLFormElement>(null)
@@ -160,17 +159,50 @@ export default function ContactPage() {
     }, 600)
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    setIsSubmitted(true)
+    if (!canSubmit) return
+    setIsSubmitting(true)
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      })
+      const payload = await res.json()
+      if (!res.ok) throw new Error(payload?.error || 'Failed to send message')
+      setIsSubmitted(true)
+      setFormData({ name: '', email: '', company: '', phone: '', service: '', requirements: '' })
+    } catch (err: any) {
+      alert('Error sending message: ' + (err?.message ?? String(err)))
+    } finally {
+      setIsSubmitting(false)
+    }
   }
+
+  // Prefill form from URL params (e.g., links from training pages)
+  useEffect(() => {
+    try {
+      const params = new URLSearchParams(window.location.search)
+      const title = params.get('title') || params.get('course')
+      const source = params.get('source')
+      if (source === 'training' && title) {
+        setFormData((prev) => ({
+          ...prev,
+          service: 'training',
+          requirements: `Interested in course: ${title}\n\n` + prev.requirements,
+        }))
+      }
+    } catch (e) {
+      // ignore on SSR
+    }
+  }, [])
 
   const selectedService = services.find((s) => s.value === formData.service)
   const canSubmit = formData.name && formData.email && formData.service && formData.requirements
 
   return (
     <>
-      <Navbar />
       <main>
         {/* Hero Section */}
         <section className="pt-32 pb-16 px-4 bg-gradient-to-br from-primary/5 via-background to-accent/5 relative overflow-hidden">
@@ -214,15 +246,15 @@ export default function ContactPage() {
           <div className="max-w-5xl mx-auto">
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
               {contactMethods.map((method, index) => (
-                <MotionDiv key={method.title} animation="fadeInUp" delay={index * 0.1}>
-                  <a href={method.href}>
-                    <AnimatedCard className="text-center h-full">
+                <MotionDiv key={method.title} animation="fadeInUp" delay={index * 0.1} className="min-w-0">
+                  <a href={method.href} className="block min-w-0 h-full">
+                    <AnimatedCard className="text-center h-full min-w-0">
                       <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-4">
                         <method.icon className="w-6 h-6 text-primary" />
                       </div>
                       <h3 className="font-semibold mb-1">{method.title}</h3>
                       <p className="text-sm text-muted-foreground mb-2">{method.description}</p>
-                      <p className="text-primary font-medium">{method.value}</p>
+                      <p className="text-primary font-medium break-all">{method.value}</p>
                     </AnimatedCard>
                   </a>
                 </MotionDiv>
@@ -504,11 +536,11 @@ export default function ContactPage() {
                             variant="primary"
                             size="lg"
                             type="submit"
-                            disabled={!canSubmit}
+                            disabled={!canSubmit || isSubmitting}
                             className="w-full disabled:opacity-50 disabled:cursor-not-allowed group"
                           >
                             <span className="flex items-center justify-center gap-2">
-                              Send Message
+                              {isSubmitting ? 'Sending...' : 'Send Message'}
                               <motion.span
                                 animate={{ x: [0, 4, 0] }}
                                 transition={{ duration: 1.5, repeat: Number.POSITIVE_INFINITY }}
@@ -576,7 +608,6 @@ export default function ContactPage() {
           </div>
         </section>
       </main>
-      <Footer />
     </>
   )
 }

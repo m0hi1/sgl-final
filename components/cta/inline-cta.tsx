@@ -39,7 +39,7 @@ export function InlineCta({
           }
         >
           {buttonText}
-          <ArrowRight className="ml-2 w-5 h-5 inline-block" />
+          <ArrowRight className="w-5 h-5 shrink-0" />
         </AnimatedButton>
       </div>
     </MotionDiv>

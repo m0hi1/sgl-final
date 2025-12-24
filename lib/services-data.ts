@@ -98,7 +98,7 @@ export const services: Service[] = [
   {
     slug: "social-media-marketing",
     title: "Social Media Marketing",
-    shortTitle: "Social Media",
+    shortTitle: "Social Media Marketing",
     description: "Facebook Marketing, Instagram Marketing, and more to grow your brand presence and engagement.",
     longDescription:
       "We provide the most effective Social Media Marketing services across Facebook, Instagram, LinkedIn, and other major platforms. Our strategies are designed to increase brand awareness, engagement, and conversions at affordable prices.",
@@ -228,7 +228,7 @@ export const services: Service[] = [
   {
     slug: "seo",
     title: "Search Engine Optimization (SEO)",
-    shortTitle: "SEO",
+    shortTitle: "SEO Services",
     description: "On-Page and Off-Page SEO to boost your website rankings and organic traffic.",
     longDescription:
       "A process of improving your site to make it easier for search engines to find and rank it. We help boost your business by ranking your website using strong and tested SEO techniques including On-Page SEO, Technical SEO, Off-Page SEO, and Local SEO.",
@@ -294,7 +294,7 @@ export const services: Service[] = [
   {
     slug: "social-media-management",
     title: "Social Media Management",
-    shortTitle: "SMM",
+    shortTitle: "Social Media Management",
     description: "Complete management of your Facebook Page, Instagram Page, and other social profiles.",
     longDescription:
       "We handle the complete management of your social media presence including Facebook Page, Instagram Page, LinkedIn, and other platforms. From content creation to community management, we keep your brand active and engaging.",
@@ -359,7 +359,7 @@ export const services: Service[] = [
   {
     slug: "website-development",
     title: "Website Development",
-    shortTitle: "Websites",
+    shortTitle: "Website Development",
     description: "Convert your design into interactive webpages that help establish and grow your business online.",
     longDescription:
       "We will convert your design into actual interactive webpages that will help you to establish and grow your business online to the next level. Our websites are fast, responsive, and optimized for conversions.",
@@ -424,7 +424,7 @@ export const services: Service[] = [
   {
     slug: "mobile-app-development",
     title: "Mobile Application Development",
-    shortTitle: "Mobile Apps",
+    shortTitle: "Mobile App Development",
     description: "Android/iOS mobile applications based on intense research and innovations to solve real problems.",
     longDescription:
       "We develop our own Android/iOS based life-size Mobile Applications, based on intense research and innovations, to solve the burning problems of people and help them grow their business exponentially by saving their time and energy.",
@@ -489,7 +489,7 @@ export const services: Service[] = [
   {
     slug: "graphic-design",
     title: "Graphics Design",
-    shortTitle: "Graphics",
+    shortTitle: "Graphics Design",
     description: "Convert your thoughts and ideas into creative visuals for online promotion and business growth.",
     longDescription:
       "We help you to convert your thoughts and ideas into creative visuals in the form of digital banners, logos etc. that can be used for online promotion and growth of your business. Our designs capture attention and communicate your brand effectively.",

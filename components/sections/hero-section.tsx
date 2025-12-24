@@ -13,7 +13,7 @@ const stats = [
   { value: "4+", label: "Years Experience" },
 ]
 
-const trustBadges = ["Mobile Apps", "Web Development", "Digital Marketing", "Cloud Hosting"]
+const trustBadges = ["Digital Marketing", "Social Media Marketing", "Website Development"]
 
 export function HeroSection() {
   return (
@@ -47,13 +47,15 @@ export function HeroSection() {
 
             <MotionDiv animation="fadeInUp" delay={0.1}>
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight">
-                Your All-in-One <span className="text-primary">Business Partner</span> for Digital Growth
+                Grow Your Business with  <span className="text-primary">Performance-Driven</span> Digital Marketing
+    
+
               </h1>
             </MotionDiv>
 
             <MotionDiv animation="fadeInUp" delay={0.2}>
               <p className="mt-4 sm:mt-6 text-base sm:text-lg md:text-xl text-muted-foreground max-w-xl">
-                We provide software solutions to real-life problems. Mobile Apps, Websites, Digital Marketing, SEO,
+                We provide software solutions to real-life problems. Digital Marketing, Mobile App Development, Website Development, SEO Services,
                 Cloud Hosting, and more—all with quality services at affordable prices.
               </p>
             </MotionDiv>
