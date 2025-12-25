@@ -136,7 +136,7 @@ export function Footer() {
                 className="flex items-center gap-2 sm:gap-3 text-background/70 hover:text-background transition-colors text-sm sm:text-base"
               >
                 <Phone className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" />
-                <span>Call: +91 7206237196</span>
+                <span>+91 7206237196</span>
               </a>
               <p className="flex items-center gap-2 sm:gap-3 text-background/70 text-sm sm:text-base">
                 <MapPin className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" />
