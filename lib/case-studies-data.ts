@@ -37,10 +37,10 @@ export const caseStudies: CaseStudy[] = [
     solution:
       "We implemented a comprehensive digital strategy combining technical SEO overhaul, strategic content marketing, and optimized PPC campaigns with advanced audience targeting. Our CRO team redesigned key landing pages for better conversions.",
     results: [
-      { metric: "Revenue Increase", value: "+340%", description: "Year-over-year revenue growth" },
-      { metric: "Organic Traffic", value: "+280%", description: "Increase in organic sessions" },
-      { metric: "ROAS", value: "6.2x", description: "Return on ad spend" },
-      { metric: "Conversion Rate", value: "+85%", description: "Improvement in conversion rate" },
+      { metric: "Revenue Increase", value: "+90%", description: "Year-over-year revenue growth" },
+      { metric: "Organic Traffic", value: "+90%", description: "Increase in organic sessions" },
+      { metric: "ROAS", value: "1.2x", description: "Return on ad spend" },
+      { metric: "Conversion Rate", value: "+80%", description: "Improvement in conversion rate" },
     ],
     testimonial: {
       quote:
@@ -65,9 +65,9 @@ export const caseStudies: CaseStudy[] = [
     solution:
       "We built a comprehensive inbound marketing machine with thought leadership content, targeted LinkedIn campaigns, and sophisticated lead nurturing automation. We implemented lead scoring to prioritize sales-ready prospects.",
     results: [
-      { metric: "Qualified Leads", value: "5x", description: "Increase in MQLs per month" },
+      { metric: "Qualified Leads", value: "2x", description: "Increase in MQLs per month" },
       { metric: "Cost Per Lead", value: "-62%", description: "Reduction in CPL" },
-      { metric: "Sales Pipeline", value: "+$4.2M", description: "Added to quarterly pipeline" },
+      // { metric: "Sales Pipeline", value: "+$4.2M", description: "Added to quarterly pipeline" },
       { metric: "Time to Close", value: "-35%", description: "Faster sales cycle" },
     ],
     testimonial: {
@@ -93,10 +93,10 @@ export const caseStudies: CaseStudy[] = [
     solution:
       "We developed a comprehensive social media strategy focused on educational content, patient success stories, and strategic influencer partnerships. Our video team created compelling content that humanized the brand.",
     results: [
-      { metric: "Brand Impressions", value: "12M+", description: "Total reach across platforms" },
-      { metric: "Engagement Rate", value: "8.4%", description: "Average engagement rate" },
-      { metric: "Follower Growth", value: "+450%", description: "Social media following increase" },
-      { metric: "Brand Recall", value: "+67%", description: "Improvement in brand recognition" },
+      { metric: "Brand Impressions", value: "1M+", description: "Total reach across platforms" },
+      { metric: "Engagement Rate", value: "3.2%", description: "Average engagement rate" },
+      { metric: "Follower Growth", value: "+90%", description: "Social media following increase" },
+      { metric: "Brand Recall", value: "+33%", description: "Improvement in brand recognition" },
     ],
     testimonial: {
       quote:
@@ -121,8 +121,8 @@ export const caseStudies: CaseStudy[] = [
     solution:
       "We designed a premium website experience that communicated trust and expertise. Combined with targeted SEO and thought leadership content, we positioned them as industry leaders.",
     results: [
-      { metric: "Conversion Rate", value: "+156%", description: "Website conversion improvement" },
-      { metric: "Time on Site", value: "+89%", description: "Increase in engagement" },
+      { metric: "Conversion Rate", value: "+80%", description: "Website conversion improvement" },
+      { metric: "Time on Site", value: "+30%", description: "Increase in engagement" },
       { metric: "Organic Leads", value: "3.4x", description: "Growth in organic inquiries" },
       { metric: "Page Speed", value: "94/100", description: "Google PageSpeed score" },
     ],
@@ -165,9 +165,9 @@ export const caseStudies: CaseStudy[] = [
     solution:
       "We built a content flywheel with SEO-optimized educational content, lead magnets, and sophisticated email sequences that nurtured prospects through long consideration cycles.",
     results: [
-      { metric: "Organic Traffic", value: "+520%", description: "Growth in organic sessions" },
+      { metric: "Organic Traffic", value: "+80%", description: "Growth in organic sessions" },
       { metric: "Email List", value: "85K+", description: "Subscribers built from scratch" },
-      { metric: "Course Sales", value: "+240%", description: "Increase in enrollments" },
+      { metric: "Course Sales", value: "+10%", description: "Increase in enrollments" },
       { metric: "CAC", value: "-71%", description: "Customer acquisition cost reduction" },
     ],
     timeline: "10 months",

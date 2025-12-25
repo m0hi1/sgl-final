@@ -23,10 +23,10 @@ export function HeroCta({
         {primaryText}
         <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 shrink-0 transition-transform group-hover:translate-x-1" />
       </AnimatedButton>
-      <AnimatedButton variant="outline" size="lg" onClick={onSecondaryClick} className="group text-sm sm:text-base">
+      {/* <AnimatedButton variant="outline" size="lg" onClick={onSecondaryClick} className="group text-sm sm:text-base">
         <Play className="w-4 h-4 sm:w-5 sm:h-5 shrink-0" />
         {secondaryText}
-      </AnimatedButton>
+      </AnimatedButton> */}
     </MotionDiv>
   )
 }

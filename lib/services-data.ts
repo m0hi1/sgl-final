@@ -89,7 +89,7 @@ export const services: Service[] = [
       },
     ],
     stats: [
-      { value: "5x", label: "Average ROAS" },
+      { value: "2x", label: "Average ROAS" },
       { value: "-40%", label: "Cost Per Lead" },
       { value: "200+", label: "Campaigns Run" },
       { value: "95%", label: "Client Retention" },
@@ -154,9 +154,9 @@ export const services: Service[] = [
       },
     ],
     stats: [
-      { value: "300%", label: "Engagement Increase" },
-      { value: "50K+", label: "Followers Gained" },
-      { value: "100+", label: "Brands Managed" },
+      { value: "20%", label: "Engagement Increase" },
+      { value: "10K+", label: "Followers Gained" },
+      { value: "10+", label: "Brands Managed" },
       { value: "95%", label: "Client Satisfaction" },
     ],
   },
@@ -219,10 +219,10 @@ export const services: Service[] = [
       },
     ],
     stats: [
-      { value: "5x", label: "Average ROAS" },
+      { value: "2x", label: "Average ROAS" },
       { value: "-35%", label: "Cost Per Click" },
-      { value: "₹10Cr+", label: "Ad Spend Managed" },
-      { value: "98%", label: "Client Retention" },
+      { value: "₹10Lacs+", label: "Ad Spend Managed" },
+      { value: "80%", label: "Client Retention" },
     ],
   },
   {
@@ -285,10 +285,10 @@ export const services: Service[] = [
       },
     ],
     stats: [
-      { value: "300%", label: "Avg Traffic Increase" },
+      { value: "20%", label: "Avg Traffic Increase" },
       { value: "150+", label: "Keywords Ranked" },
-      { value: "90%", label: "Client Retention" },
-      { value: "4x", label: "ROI Average" },
+      { value: "80%", label: "Client Retention" },
+      { value: "2x", label: "ROI Average" },
     ],
   },
   {
@@ -353,7 +353,7 @@ export const services: Service[] = [
       { value: "100+", label: "Pages Managed" },
       { value: "5K+", label: "Posts Created" },
       { value: "24hr", label: "Response Time" },
-      { value: "98%", label: "Client Satisfaction" },
+      { value: "95%", label: "Client Satisfaction" },
     ],
   },
   {
@@ -416,8 +416,8 @@ export const services: Service[] = [
     ],
     stats: [
       { value: "100+", label: "Websites Launched" },
-      { value: "45%", label: "Avg Conversion Lift" },
-      { value: "<2s", label: "Avg Load Time" },
+      { value: "30%", label: "Avg Conversion Lift" },
+      { value: "<1s", label: "Avg Load Time" },
       { value: "100%", label: "Mobile Responsive" },
     ],
   },
@@ -483,7 +483,7 @@ export const services: Service[] = [
       { value: "50+", label: "Apps Developed" },
       { value: "100K+", label: "Downloads" },
       { value: "4.5★", label: "Avg Rating" },
-      { value: "99%", label: "Client Satisfaction" },
+      { value: "95%", label: "Client Satisfaction" },
     ],
   },
   {
@@ -548,7 +548,7 @@ export const services: Service[] = [
       { value: "500+", label: "Designs Created" },
       { value: "100+", label: "Logos Designed" },
       { value: "48hr", label: "Avg Turnaround" },
-      { value: "98%", label: "Client Satisfaction" },
+      { value: "95%", label: "Client Satisfaction" },
     ],
   },
   {

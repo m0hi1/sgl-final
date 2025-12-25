@@ -62,7 +62,7 @@ export default async function ServicePage({ params }: PageProps) {
                 <MotionDiv animation="fadeInUp" delay={0.2}>
                   <p className="text-xl text-muted-foreground mb-8">{service.longDescription}</p>
                 </MotionDiv>
-                <MotionDiv animation="fadeInUp" delay={0.3} className="flex flex-col sm:flex-row gap-4">
+                {/* <MotionDiv animation="fadeInUp" delay={0.3} className="flex flex-col sm:flex-row gap-4">
                   <AnimatedButton variant="primary" size="lg">
                     Get Started
                     <ArrowRight className="w-5 h-5 shrink-0" />
@@ -70,7 +70,7 @@ export default async function ServicePage({ params }: PageProps) {
                   <AnimatedButton variant="outline" size="lg">
                     View Case Studies
                   </AnimatedButton>
-                </MotionDiv>
+                </MotionDiv> */}
               </div>
 
               {/* Stats Card */}

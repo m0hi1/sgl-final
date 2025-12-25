@@ -51,7 +51,7 @@ export function StickyCta({ text = "Get Free Quote", showAfterPercent = 40 }: St
                 <FaWhatsapp className="w-4 h-4" />
               </a>
 
-              <a
+              {/* <a
                 href="https://instagram.com/smartgalaxylabs"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -59,7 +59,7 @@ export function StickyCta({ text = "Get Free Quote", showAfterPercent = 40 }: St
                 className="w-10 h-10 rounded-full bg-pink-600/10 text-pink-600 flex items-center justify-center hover:bg-pink-600/20 transition"
               >
                 <FaInstagram className="w-4 h-4" />
-              </a>
+              </a> */}
 
               <a
                 href="tel:+917206237196"
