@@ -37,6 +37,9 @@ const footerLinks = {
     { href: "/blog", label: "Blog" },
     { href: "/training", label: "Training" },
     { href: "/contact", label: "Contact" },
+    { href: "/privacy", label: "Privacy Policy" },
+    { href: "/terms", label: "Terms & Conditions" },
+    { href: "/refund", label: "Refund & Cancellation" },
   ],
 }
 

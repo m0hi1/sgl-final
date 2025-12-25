@@ -424,7 +424,7 @@ export default function ContactPage() {
                               htmlFor="phone"
                               className="block text-sm font-medium mb-2 group-focus-within:text-primary transition-colors"
                             >
-                              Phone Number
+                              Phone Number / Whatsapp Number
                             </label>
                             <input
                               type="tel"

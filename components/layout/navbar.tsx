@@ -5,7 +5,7 @@ import Link from "next/link"
 import { motion, AnimatePresence } from "framer-motion"
 import { AnimatedButton } from "@/components/ui/animated-button"
 import { cn } from "@/lib/utils"
-import { Menu, X, ChevronDown } from "lucide-react"
+import { Menu, X, ChevronDown, Mail, Phone } from "lucide-react"
 import { services } from "@/lib/services-data"
 
 const navLinks = [
@@ -46,6 +46,20 @@ export function Navbar() {
         scrolled ? "bg-background/80 backdrop-blur-lg border-b border-border shadow-sm" : "bg-transparent",
       )}
     >
+      {/* Top strip: quick contact info */}
+      <div className="w-full bg-primary text-primary-foreground">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-1 sm:py-2 flex items-center justify-center sm:justify-end gap-4 text-xs sm:text-sm">
+          <a href="mailto:smartgalaxylabs@gmail.com" className="flex items-center gap-2 text-primary-foreground/90 hover:underline">
+            <Mail className="w-4 h-4" />
+            <span>smartgalaxylabs@gmail.com</span>
+          </a>
+          <a href="tel:+917206237196" className="flex items-center gap-2 text-primary-foreground/90 hover:underline">
+            <Phone className="w-4 h-4" />
+            <span>+91 7206237196</span>
+          </a>
+        </div>
+      </div>
+
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-14 sm:h-16 md:h-20">
           {/* Logo - Smaller on mobile */}

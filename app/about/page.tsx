@@ -104,7 +104,7 @@ export default function AboutPage() {
                     improve the quality of our products by exploring innovative ideas.
                   </p>
                 </MotionDiv>
-                <MotionDiv animation="fadeInUp" delay={0.3} className="flex flex-col sm:flex-row gap-4">
+                {/* <MotionDiv animation="fadeInUp" delay={0.3} className="flex flex-col sm:flex-row gap-4">
                   <AnimatedButton variant="primary" size="lg">
                     Work With Us
                     <ArrowRight className="w-5 h-5 shrink-0" />
@@ -112,7 +112,7 @@ export default function AboutPage() {
                   <AnimatedButton variant="outline" size="lg">
                     View Careers
                   </AnimatedButton>
-                </MotionDiv>
+                </MotionDiv> */}
               </div>
 
               <MotionDiv animation="scaleIn" delay={0.3} className="relative">
