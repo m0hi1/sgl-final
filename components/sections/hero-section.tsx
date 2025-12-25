@@ -13,8 +13,7 @@ const stats = [
   { value: "4+", label: "Years Experience" },
 ]
 
-const trustBadges = ["Digital Marketing", "Social Media Marketing", "Website Development"]
-
+const trustBadges = ["Digital Marketing", "Social Media Marketing", "Website Development", "Mobile App Development"]
 export function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center pt-20 overflow-hidden">

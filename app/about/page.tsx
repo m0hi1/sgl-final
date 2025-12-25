@@ -132,10 +132,10 @@ export default function AboutPage() {
         {/* Stats Section */}
         <section className="py-16 px-4 bg-primary text-primary-foreground">
           <div className="max-w-7xl mx-auto">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-8 text-center">
               {[
                 { value: "50+", label: "Clients Served" },
-                { value: "$5M+", label: "Revenue Generated" },
+                // { value: "$5M+", label: "Revenue Generated" },
                 { value: "4+", label: "Years Experience" },
                 { value: "95%", label: "Client Satisfaction" },
               ].map((stat, index) => (

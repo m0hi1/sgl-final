@@ -6,31 +6,23 @@ import { motion, AnimatePresence } from "framer-motion"
 import { AnimatedButton } from "@/components/ui/animated-button"
 import { cn } from "@/lib/utils"
 import { Menu, X, ChevronDown } from "lucide-react"
+import { services } from "@/lib/services-data"
 
 const navLinks = [
   { href: "/", label: "Home" },
   {
     href: "/services",
     label: "Services",
-    children: [
-      { href: "/services/digital-marketing", label: "Digital Marketing" },
-      { href: "/services/mobile-app-development", label: "Mobile App Development" },
-      { href: "/services/website-development", label: "Website Development" },
-      { href: "/services/seo", label: "SEO Services" },
-      { href: "/services/cloud-hosting", label: "Cloud & Servers" },
-      { href: "/services/software-development", label: "Software Development" },
-      { href: "/services/graphics-design", label: "Graphics Design" },
-      { href: "/services/video-editing", label: "Video Editing" },
-    ],
+    children: services.map((s) => ({ href: `/services/${s.slug}`, label: s.title })),
   },
   { href: "/case-studies", label: "Portfolio" },
-  { href: "/about", label: "About" },
+  { href: "/about", label: "About Us" },
   {
     href: "/training",
-    label: "Training",
+    label: "Trainings",
     children: [{ href: "/training/flutter-training", label: "Flutter Development" }],
   },
-  { href: "/contact", label: "Contact" },
+  { href: "/contact", label: "Contact Us" },
 ]
 
 export function Navbar() {
@@ -66,8 +58,8 @@ export function Navbar() {
 	              />
 	            </div>
 	            <span className="font-bold text-base sm:text-xl tracking-tight leading-none flex items-center translate-y-[1px]">
-	              <span className="sm:hidden">SGL</span>
-	              <span className="hidden sm:inline">SmartGalaxyLabs</span>
+	              <span className="sm:hidden">SmartGalaxy Labs</span>
+	              <span className="hidden sm:inline">SmartGalaxy Labs</span>
 	            </span>
 	          </Link>
 

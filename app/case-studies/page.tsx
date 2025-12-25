@@ -46,8 +46,9 @@ export default function CaseStudiesPage() {
               </MotionDiv>
               <MotionDiv animation="fadeInUp" delay={0.2}>
                 <p className="text-xl text-muted-foreground mb-8">
-                  Explore how we've helped businesses like yours achieve extraordinary growth through strategic digital
-                  marketing.
+                  Explore how we've helped businesses like yours achieve extraordinary growth through strategic Digital
+                  Marketing, Social Media Marketing (Facebook Marketing, Instagram Marketing etc), Pay Per Click (PPC) Marketing, Google Ads (Google Search Engine Ads, YouTube Ads etc), SEO Services, Website Development, Mobile App Development, and more.
+ .
                 </p>
               </MotionDiv>
             </div>
@@ -62,7 +63,7 @@ export default function CaseStudiesPage() {
                 { value: "500+", label: "Projects Completed" },
                 // { value: "$2.5B+", label: "Revenue Generated" },
                 // { value: "340%", label: "Avg Traffic Growth" },
-                { value: "98%", label: "Client Satisfaction" },
+                { value: "95%", label: "Client Satisfaction" },
               ].map((stat) => (
                 <div key={stat.label} className="text-center">
                   <div className="text-3xl md:text-4xl font-bold text-primary">{stat.value}</div>
