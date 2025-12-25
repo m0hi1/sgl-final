@@ -6,6 +6,7 @@ import { motion, AnimatePresence } from "framer-motion"
 import { AnimatedButton } from "@/components/ui/animated-button"
 import { cn } from "@/lib/utils"
 import { Menu, X, ChevronDown, Mail, Phone } from "lucide-react"
+import { FaWhatsapp } from "react-icons/fa"
 import { services } from "@/lib/services-data"
 
 const navLinks = [
@@ -53,9 +54,26 @@ export function Navbar() {
             <Mail className="w-4 h-4" />
             <span>smartgalaxylabs@gmail.com</span>
           </a>
-          <a href="tel:+917206237196" className="flex items-center gap-2 text-primary-foreground/90 hover:underline">
+          {/* Phone */}
+          
+          <a
+            href="tel:+917206237196"
+            className="flex items-center gap-2 text-primary-foreground/90 hover:underline"
+          >
             <Phone className="w-4 h-4" />
             <span>+91 7206237196</span>
+          </a>
+
+          {/* WhatsApp */}
+          <a
+            href="https://wa.me/917206237196"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="WhatsApp support"
+            className="flex items-center gap-2 text-primary-foreground/90 hover:underline"
+          >
+            <FaWhatsapp className="w-4 h-4" />
+            <span>WhatsApp Us</span>
           </a>
         </div>
       </div>
