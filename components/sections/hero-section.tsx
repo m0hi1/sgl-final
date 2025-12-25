@@ -59,9 +59,9 @@ export function HeroSection() {
               </p>
             </MotionDiv>
 
-            <div className="mt-6 sm:mt-10">
+            {/* <div className="mt-6 sm:mt-10">
               <HeroCta primaryText="Get Free Consultation" secondaryText="View Our Work" />
-            </div>
+            </div> */}
 
             <MotionDiv
               animation="fadeInUp"

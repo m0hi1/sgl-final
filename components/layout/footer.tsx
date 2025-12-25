@@ -84,13 +84,13 @@ export function Footer() {
             >
               Get Free Consultation
             </AnimatedButton>
-            <AnimatedButton
+            {/* <AnimatedButton
               variant="ghost"
               size="lg"
               className="text-primary-foreground border-2 border-primary-foreground/30 hover:bg-primary-foreground/10 text-sm sm:text-base"
             >
               View Our Work
-            </AnimatedButton>
+            </AnimatedButton> */}
           </MotionDiv>
         </div>
       </MotionSection>
