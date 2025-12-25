@@ -36,7 +36,7 @@ const caseStudies = [
     title: "Brand Awareness Campaign",
     client: "HealthPlus",
     industry: "Healthcare",
-    metric: "1K+",
+    metric: "1M+",
     metricLabel: "Impressions",
     description: "Building brand recognition in a competitive healthcare market through social media excellence.",
     image: "/healthcare-brand-social-media.jpg",

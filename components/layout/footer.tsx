@@ -13,6 +13,7 @@ import {
   FaTelegram,
   FaPinterestP,
   FaRedditAlien,
+  FaWhatsapp,
 } from "react-icons/fa"
 import { FaXTwitter } from "react-icons/fa6"
 
@@ -119,10 +120,23 @@ export function Footer() {
               </a>
               <a
                 href="https://wa.me/917206237196"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="WhatsApp support"
+                className="flex items-center gap-2 sm:gap-3 text-background/70 hover:text-background transition-colors text-sm sm:text-base"
+              >
+                <FaWhatsapp className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0 text-green-400" />
+                <span>+91 7206237196</span>
+              </a>
+
+              {/* Mobile-only phone link */}
+              <a
+                href="tel:+917206237196"
+                aria-label="Call support"
                 className="flex items-center gap-2 sm:gap-3 text-background/70 hover:text-background transition-colors text-sm sm:text-base"
               >
                 <Phone className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" />
-                +91 7206237196
+                <span>Call: +91 7206237196</span>
               </a>
               <p className="flex items-center gap-2 sm:gap-3 text-background/70 text-sm sm:text-base">
                 <MapPin className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" />
@@ -222,6 +236,8 @@ export function Footer() {
             ))}
           </div>
         </div>
+
+
       </div>
     </footer>
   )
